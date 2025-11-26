@@ -1,0 +1,20 @@
+{
+  "name": "learn-reactjs-with-redux",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Paladin99222/learn-reactjs-with-redux.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Paladin99222/learn-reactjs-with-redux/issues"
+  },
+  "homepage": "https://github.com/Paladin99222/learn-reactjs-with-redux#readme"
+}
