@@ -1,0 +1,76 @@
+.list-page {
+  padding: 16px;
+  width: 100%;
+  min-width: 0;
+  max-width: 100vw;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.layout {
+  display: flex; /* needed for sidebar + main content */
+  width: 100%;
+  align-items: stretch;
+  gap: 16px;
+}
+
+.sidebar {
+  flex: 0 0 200px; /* fixed 200px width */
+  max-width: 200px;
+  margin-right: 0;
+}
+
+.loading {
+  min-width: 0;
+  min-height: 300px;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 40px 0;
+}
+
+.main-content {
+  flex: 1; /* take remaining space */
+  min-width: 0;
+  min-height: 300px;
+  box-sizing: border-box;
+}
+
+.products-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  box-sizing: border-box;
+}
+
+/* Optional: responsive breakpoints */
+@media (max-width: 1024px) {
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column; /* stack sidebar above main content */
+  }
+
+  .sidebar {
+    width: 100%; /* full width */
+    margin-right: 0; /* remove spacing */
+    margin-bottom: 16px; /* add spacing below */
+    display: flex;
+    overflow-x: auto; /* horizontal scroll if many categories */
+  }
+
+  .sidebar > * {
+    flex: 0 0 auto; /* items don’t shrink */
+    margin-right: 8px; /* spacing between categories */
+  }
+}
+
+@media (max-width: 640px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
