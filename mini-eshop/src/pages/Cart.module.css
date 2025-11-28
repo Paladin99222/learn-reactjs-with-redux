@@ -1,0 +1,94 @@
+/* Cart.module.css */
+
+.cart-page {
+  padding: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: auto; /* for horizontal scroll on small screens */
+}
+
+.cart-title {
+  margin-bottom: 16px;
+  font-size: 1.5rem;
+}
+
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px; /* ensures table doesn’t shrink too small */
+}
+
+.cart-table th,
+.cart-table td {
+  padding: 12px 8px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.cart-table th {
+  background-color: #f4f4f4;
+}
+
+.cart-table tr:nth-child(even) {
+  background-color: #fafafa; /* striped rows */
+}
+
+.cart-table tr:hover {
+  background-color: #f0f0f0;
+}
+
+.cart-table button {
+  padding: 6px 12px;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.cart-table button:hover {
+  background-color: #c82333;
+}
+
+.cart-table td.cell-remove {
+  text-align: center;
+}
+
+.remove-link {
+  color: #c00;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.cart-footer {
+  margin-top: 16px;
+  text-align: right;
+}
+.total-amount {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.checkout-button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.checkout-button {
+  margin: auto;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.checkout-button:hover {
+  background-color: #218838;
+}
+/* Responsive: scroll horizontally if screen is too small */
+@media (max-width: 768px) {
+  .cart-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}

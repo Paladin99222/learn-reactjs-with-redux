@@ -1,14 +1,14 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
 import type { Product } from "../types";
-import { fetchProductsApi } from "../fakeApi";
 
 export const fetchProducts = createAsyncThunk<Product[]>(
   "products/fetchProducts",
 
   async () => {
-    const data = await fetchProductsApi();
-    return data;
+    const data = await fetch("http://localhost:5000/products");
+    console.log(data);
+    return (await data.json()) as Product[];
   }
 );
 
@@ -22,6 +22,9 @@ const productSlice = createSlice({
   reducers: {
     clearProducts: (state) => {
       state.items = [];
+    },
+    addProduct: (state, action) => {
+      state.items.push(action.payload);
     },
   },
   extraReducers: (builder) => {

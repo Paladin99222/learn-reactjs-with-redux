@@ -20,6 +20,30 @@
   margin-right: 0;
 }
 
+.category-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.category-item {
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.category-item:hover {
+  background-color: #f0f0f0;
+}
+
+.category-item:last-child {
+  border-bottom: none;
+}
+
+.category-item.active {
+  font-weight: bold;
+  background-color: #e0e0e0;
+}
 .loading {
   min-width: 0;
   min-height: 300px;
@@ -33,6 +57,7 @@
   min-width: 0;
   min-height: 300px;
   box-sizing: border-box;
+  padding: 16px;
 }
 
 .products-grid {
@@ -52,20 +77,44 @@
 
 @media (max-width: 768px) {
   .layout {
-    flex-direction: column; /* stack sidebar above main content */
+    flex-direction: column; /* sidebar on top */
   }
-
   .sidebar {
-    width: 100%; /* full width */
-    margin-right: 0; /* remove spacing */
-    margin-bottom: 16px; /* add spacing below */
-    display: flex;
-    overflow-x: auto; /* horizontal scroll if many categories */
+    flex: 0 0 auto;
+    max-width: 100%;
+    margin-bottom: 16px;
   }
 
-  .sidebar > * {
-    flex: 0 0 auto; /* items don’t shrink */
-    margin-right: 8px; /* spacing between categories */
+  .sidebar-title {
+    display: none;
+  }
+
+  .category-list {
+    display: flex; /* horizontal layout */
+    flex-direction: row; /* row direction */
+    overflow-x: auto; /* horizontal scroll if needed */
+    gap: 8px; /* spacing between items */
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .category-list li {
+    flex: 0 0 auto; /* do not shrink */
+    white-space: nowrap; /* prevent text wrapping */
+    padding: 8px 12px; /* touch-friendly padding */
+    cursor: pointer;
+    position: relative; /* for pseudo-element separator */
+  }
+
+  /* Add a vertical separator between items except the last one */
+  .category-list li:not(:last-child)::after {
+    content: "|"; /* separator */
+    position: absolute;
+    right: -6px; /* adjust spacing */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
   }
 }
 

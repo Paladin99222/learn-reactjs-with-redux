@@ -1,6 +1,7 @@
 export interface Product {
   id: number;
   title: string;
+  category: string;
   description: string;
   brand: string;
   price: number;
@@ -15,4 +16,12 @@ export interface ProductState {
   items: Product[];
   loading: boolean;
   error: string | null;
+}
+
+export interface CartItem {
+  productId: number;
+  quantity: number;
+}
+export interface CartState {
+  items: CartItem[];
 }

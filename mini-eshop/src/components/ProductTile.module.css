@@ -1,44 +1,93 @@
 .product-tile {
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 8px; /* smaller padding */
-  text-align: center;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  position: relative; /* needed for overlay icons */
+  border-radius: 12px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-tile:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.image-wrapper {
+  width: 100%;
+  height: 300px; /* fixed height for equal tiles */
   display: flex;
-  flex-direction: column;
-  gap: 6px;
+  align-items: center; /* vertical center */
+  justify-content: center; /* horizontal center */
+  background: #f3f4f6; /* subtle neutral bg */
+  overflow: hidden;
 }
 
 .thumbnail {
   width: 100%;
-  height: 200px; /* fixed height */
-  object-fit: cover; /* avoid stretching */
-  border-radius: 4px;
+  height: 100%;
+  object-fit: cover; /* fills the space */
+  object-position: center;
 }
 
-.title {
-  font-size: 0.95rem;
-  font-weight: 500;
-  margin: 0;
-  white-space: nowrap; /* optional: keep one line */
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.brand {
-  font-size: 0.85rem;
-  color: #555;
-  margin: 0;
-}
-.price {
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: #222;
-  margin: 0;
-}
-
-.actions {
+/* Container for overlay buttons */
+.overlay-buttons {
+  position: absolute;
+  top: 8px;
+  right: 8px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   gap: 8px;
+}
+
+.overlay-buttons button {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px; /* rounded square */
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.overlay-buttons button:hover {
+  background: rgba(255, 255, 255, 1);
+  transform: scale(1.1);
+}
+
+.add-to-cart-button:disabled {
+  background: rgba(200, 200, 200, 0.7);
+  cursor: not-allowed;
+  transform: none;
+}
+
+.add-to-cart-button:disabled:hover {
+  background: rgba(200, 200, 200, 0.7);
+  transform: none;
+}
+
+/* Product info below thumbnail */
+.product-info {
+  padding: 10px 12px;
+}
+
+.product-info .title {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 4px 0;
+}
+
+.product-info .brand {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 0;
+}
+
+.product-info .price {
+  font-size: 15px;
+  font-weight: 600;
+  color: #111827;
+  margin: 6px 0 0;
 }

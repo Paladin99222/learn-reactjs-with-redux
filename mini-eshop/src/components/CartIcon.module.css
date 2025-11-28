@@ -1,0 +1,26 @@
+.cartIcon {
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+}
+
+.cartIcon:hover {
+  background-color: #f0f0f0;
+  border-radius: 50%;
+}
+
+.badge {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  background: #ef4444;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 999px;
+  padding: 2px 6px;
+  text-align: center;
+  line-height: 1;
+}

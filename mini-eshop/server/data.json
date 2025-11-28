@@ -1,0 +1,454 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Dell XPS 13 (9310) 13.4\" Ultrabook",
+      "category": "laptop",
+      "brand": "Dell",
+      "thumbnail": "https://images.pexels.com/photos/567-1236788/pexels-photo-567-1236788.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "price": 1199.0,
+      "specs": {
+        "CPU": "Intel Core i5‑1135G7",
+        "RAM": "16 GB",
+        "GPU": "Intel Iris Xe Graphics"
+      },
+      "description": "Compact 13.4‑inch ultrabook — sleek, lightweight and great battery life, perfect for productivity and portability.",
+      "manufacturedDate": "2023-09-14"
+    },
+    {
+      "id": 2,
+      "title": "ASUS ROG Zephyrus G14 GA401 Gaming Laptop",
+      "category": "laptop",
+      "brand": "ASUS",
+      "thumbnail": "https://images.pexels.com/photos/574-126954/pexels-photo-574-126954.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "price": 1499.99,
+      "specs": {
+        "CPU": "AMD Ryzen 9 5900HS",
+        "RAM": "16 GB",
+        "GPU": "NVIDIA GeForce RTX 3060"
+      },
+      "description": "High‑performance 14‑inch gaming laptop — powerful CPU/GPU combo and compact form factor for gaming or creative workloads.",
+      "manufacturedDate": "2024-01-22"
+    },
+    {
+      "id": 3,
+      "title": "Acer Predator Helios 300 15.6\" Gaming Laptop",
+      "category": "laptop",
+      "brand": "Acer",
+      "thumbnail": "https://images.pexels.com/photos/356056/pexels-photo-356056.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "price": 1299.0,
+      "specs": {
+        "CPU": "Intel Core i7‑11800H",
+        "RAM": "16 GB",
+        "GPU": "NVIDIA GeForce RTX 3070"
+      },
+      "description": "Powerful 15.6‑inch gaming laptop — desktop‑class performance in a portable form, ideal for gaming or heavy workloads.",
+      "manufacturedDate": "2024-02-08"
+    },
+    {
+      "id": 4,
+      "title": "HP Envy 15\" Touch Laptop (2023)",
+      "category": "laptop",
+      "brand": "HP",
+      "thumbnail": "https://images.pexels.com/photos/359857/pexels-photo-359857.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "price": 1299.99,
+      "specs": {
+        "CPU": "Intel Core i7‑1165G7",
+        "RAM": "16 GB",
+        "GPU": "NVIDIA GeForce GTX 1650"
+      },
+      "description": "15‑inch touchscreen laptop — balanced for creative work, design or everyday tasks with good performance and portability.",
+      "manufacturedDate": "2023-08-15"
+    },
+    {
+      "id": 5,
+      "title": "Apple MacBook Air 13.6\" M2 (2024)",
+      "category": "laptop",
+      "brand": "Apple",
+      "thumbnail": "https://images.pexels.com/photos/238118/pexels-photo-238118.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "price": 1249.0,
+      "specs": {
+        "CPU": "Apple M2",
+        "RAM": "8 GB",
+        "GPU": "Integrated 8‑core"
+      },
+      "description": "Ultra‑light and efficient MacBook Air — great for development, daily work or travel thanks to M2 performance and portability.",
+      "manufacturedDate": "2024-06-01"
+    },
+    {
+      "id": 6,
+      "title": "Acer Aspire TC‑895 Desktop PC",
+      "category": "pc",
+      "brand": "Acer",
+      "thumbnail": "https://images.pexels.com/photos/1029757/pexels-photo-1029757.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "price": 599.0,
+      "specs": {
+        "CPU": "Intel Core i5‑10400",
+        "RAM": "8 GB",
+        "GPU": "Integrated Intel UHD Graphics"
+      },
+      "description": "Budget desktop PC — simple and reliable, great for everyday tasks like browsing, office work, and media consumption.",
+      "manufacturedDate": "2022-10-20"
+    },
+    {
+      "id": 7,
+      "title": "HP Pavilion TG01 Desktop PC (2023)",
+      "category": "pc",
+      "brand": "HP",
+      "thumbnail": "https://images.pexels.com/photos/846056/pexels-photo-846056.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "price": 749.0,
+      "specs": {
+        "CPU": "Intel Core i5‑12400F",
+        "RAM": "16 GB",
+        "GPU": "NVIDIA GeForce GTX 1660 Super"
+      },
+      "description": "Mid‑range desktop PC — balanced for gaming, office, and creative work with discrete GPU and enough RAM.",
+      "manufacturedDate": "2023-04-17"
+    },
+    {
+      "id": 8,
+      "title": "Samsung Galaxy Tab S7 FE 12.4\" Tablet WiFi",
+      "category": "tablet",
+      "brand": "Samsung",
+      "thumbnail": "https://images.pexels.com/photos/5082570/pexels-photo-5082570.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "price": 529.0,
+      "specs": {
+        "CPU": "Snapdragon 750G",
+        "RAM": "4 GB",
+        "Display": "12.4\" TFT"
+      },
+      "description": "Large‑screen tablet — great for reading, media, browsing or light productivity on the go.",
+      "manufacturedDate": "2023-07-11"
+    },
+    {
+      "id": 9,
+      "title": "Microsoft Surface Pro 9 13\" 2‑in‑1 Tablet",
+      "category": "tablet",
+      "brand": "Microsoft",
+      "thumbnail": "https://images.pexels.com/photos/509926/pexels-photo-509926.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "price": 1099.0,
+      "specs": {
+        "CPU": "Intel Core i7‑1255U",
+        "RAM": "16 GB",
+        "Display": "13\" PixelSense"
+      },
+      "description": "Versatile 2‑in‑1 device — combines tablet portability with laptop power, ideal for professionals and students on the go.",
+      "manufacturedDate": "2024-04-02"
+    },
+    {
+      "id": 10,
+      "title": "Apple iPad Air 11\" WiFi + 256GB",
+      "category": "tablet",
+      "brand": "Apple",
+      "thumbnail": "https://images.pexels.com/photos/5082065/pexels-photo-5082065.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "price": 749.0,
+      "specs": {
+        "CPU": "Apple M1",
+        "RAM": "8 GB",
+        "Display": "11\" Liquid Retina"
+      },
+      "description": "Powerful and lightweight tablet — excellent for creative work, note‑taking, reading or media consumption with Apple ecosystem.",
+      "manufacturedDate": "2023-05-10"
+    },
+    {
+      "id": 11,
+      "title": "Canon EOS Rebel T7 DSLR Camera + 18‑55mm Lens",
+      "category": "camera",
+      "brand": "Canon",
+      "thumbnail": "https://images.pexels.com/photos/736314/pexels-photo-736314.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "price": 579.0,
+      "specs": {
+        "Megapixels": "24.1 MP",
+        "Lens": "EF‑S 18‑55 mm",
+        "Sensor": "APS‑C"
+      },
+      "description": "Entry‑level DSLR camera with interchangeable lens — great for photography enthusiasts starting out with manual control.",
+      "manufacturedDate": "2022-11-05"
+    },
+    {
+      "id": 12,
+      "title": "Nikon D3500 DSLR Camera + AF‑P 18‑55mm Lens",
+      "category": "camera",
+      "brand": "Nikon",
+      "thumbnail": "https://images.pexels.com/photos/282399/pexels-photo-282399.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "price": 499.99,
+      "specs": {
+        "Megapixels": "24.2 MP",
+        "Lens": "AF‑P 18‑55 mm",
+        "Sensor": "APS‑C"
+      },
+      "description": "Easy‑to‑use DSLR camera with excellent image quality — a great choice for beginners in photography or travel snapshots.",
+      "manufacturedDate": "2022-08-21"
+    },
+    {
+      "id": 13,
+      "title": "GoPro HERO10 Black Action Camera",
+      "category": "camera",
+      "brand": "GoPro",
+      "thumbnail": "https://images.pexels.com/photos/5077049/pexels-photo-5077049.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "price": 399.0,
+      "specs": {
+        "Megapixels": "23 MP",
+        "Lens": "Fixed wide",
+        "Video": "5.3K/60fps"
+      },
+      "description": "Compact action camera — perfect for sports, travel or outdoor filming with rugged build and high‑quality video.",
+      "manufacturedDate": "2024-03-05"
+    },
+    {
+      "id": 14,
+      "title": "Sony WH‑1000XM4 Wireless Noise Cancelling Headphones",
+      "category": "accessories",
+      "brand": "Sony",
+      "thumbnail": "https://images.pexels.com/photos/374777/pexels-photo-374777.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "price": 249.99,
+      "specs": {
+        "Type": "Over‑ear Bluetooth",
+        "Battery": "Up to 30 hrs",
+        "NoiseCanceling": "Yes"
+      },
+      "description": "Premium noise‑cancelling headphones — excellent sound quality and long battery for travel, work or leisure.",
+      "manufacturedDate": "2023-03-18"
+    },
+    {
+      "id": 15,
+      "title": "Razer Kraken X Wireless Over‑Ear Headphones",
+      "category": "accessories",
+      "brand": "Razer",
+      "thumbnail": "https://images.pexels.com/photos/159105/headphones-audio-music-159105.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "price": 99.99,
+      "specs": {
+        "Type": "Over‑ear Bluetooth",
+        "Battery": "Up to 20 hrs",
+        "NoiseCanceling": "No"
+      },
+      "description": "Lightweight wireless headphones — comfortable for long sessions and good sound quality at a budget price.",
+      "manufacturedDate": "2024-01-15"
+    },
+    {
+      "id": 16,
+      "title": "Logitech K380 Multi‑Device Bluetooth Keyboard",
+      "category": "accessories",
+      "brand": "Logitech",
+      "thumbnail": "https://images.pexels.com/photos/159403/keyboard-keys-laptop-computer-159403.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "price": 39.99,
+      "specs": {
+        "Layout": "Compact 3‑row",
+        "Connectivity": "Bluetooth",
+        "OS Support": "Windows / Mac / Android / iOS"
+      },
+      "description": "Compact and lightweight keyboard — connects to multiple devices and ideal for mobile productivity or on‑the‑go setups.",
+      "manufacturedDate": "2024-05-12"
+    },
+    {
+      "id": 17,
+      "title": "Logitech G502 HERO Gaming Mouse",
+      "category": "accessories",
+      "brand": "Logitech",
+      "thumbnail": "https://images.pexels.com/photos/220294/pexels-photo-220294.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "price": 49.99,
+      "specs": {
+        "Type": "Wired Gaming Mouse",
+        "DPI": "Up to 16,000",
+        "Buttons": "11 Programmable"
+      },
+      "description": "High‑precision gaming mouse with programmable buttons — good for FPS, MMO or productivity workflows alike.",
+      "manufacturedDate": "2023-09-28"
+    },
+    {
+      "id": 18,
+      "title": "Samsung 27\" Odyssey G5 1440p Curved Monitor",
+      "category": "accessories",
+      "brand": "Samsung",
+      "thumbnail": "https://images.pexels.com/photos/340910/pexels-photo-340910.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "price": 279.99,
+      "specs": {
+        "Size": "27\"",
+        "Resolution": "2560x1440",
+        "RefreshRate": "144 Hz"
+      },
+      "description": "Curved QHD monitor with high refresh rate — ideal for gaming, design work, or multitasking setups.",
+      "manufacturedDate": "2023-10-05"
+    },
+    {
+      "id": 19,
+      "title": "Kingston NV1 500GB M.2 NVMe SSD",
+      "category": "accessories",
+      "brand": "Kingston",
+      "thumbnail": "https://images.pexels.com/photos/449848/pexels-photo-449848.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "price": 59.99,
+      "specs": {
+        "Capacity": "500 GB",
+        "Interface": "M.2 NVMe",
+        "ReadSpeed": "Up to 2100 MB/s"
+      },
+      "description": "Fast NVMe SSD for desktops or laptops — quick storage upgrade for improved performance.",
+      "manufacturedDate": "2024-03-02"
+    },
+    {
+      "id": 20,
+      "title": "SanDisk Ultra 128GB USB 3.0 Flash Drive",
+      "category": "accessories",
+      "brand": "SanDisk",
+      "thumbnail": "https://images.pexels.com/photos/374074/pexels-photo-374074.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "price": 19.99,
+      "specs": {
+        "Capacity": "128 GB",
+        "Interface": "USB 3.0",
+        "ReadSpeed": "Up to 100 MB/s"
+      },
+      "description": "Portable USB 3.0 flash drive — fast, compact and great for backups or file transfers.",
+      "manufacturedDate": "2024-02-07"
+    },
+    {
+      "id": 21,
+      "title": "Razer BlackWidow V4 Mechanical Keyboard",
+      "category": "accessories",
+      "brand": "Razer",
+      "thumbnail": "https://images.pexels.com/photos/459654/pexels-photo-459654.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "price": 139.99,
+      "specs": {
+        "Switches": "Green Mechanical",
+        "Connectivity": "USB‑C",
+        "Backlight": "RGB"
+      },
+      "description": "Mechanical gaming keyboard with RGB lighting — responsive keys and ideal for gaming or fast typing.",
+      "manufacturedDate": "2024-02-25"
+    },
+    {
+      "id": 22,
+      "title": "Logitech C920 HD Pro Webcam",
+      "category": "accessories",
+      "brand": "Logitech",
+      "thumbnail": "https://images.pexels.com/photos/844124/pexels-photo-844124.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "price": 69.99,
+      "specs": {
+        "Resolution": "Full HD 1080p",
+        "FrameRate": "30 fps",
+        "Mic": "Dual built-in"
+      },
+      "description": "Reliable Full HD webcam — ideal for video calls, remote work, and streaming setups.",
+      "manufacturedDate": "2024-04-20"
+    },
+    {
+      "id": 23,
+      "title": "Dell UltraSharp U2720Q 27\" 4K Monitor",
+      "category": "accessories",
+      "brand": "Dell",
+      "thumbnail": "https://images.pexels.com/photos/1101642/pexels-photo-1101642.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "price": 539.99,
+      "specs": {
+        "Size": "27\"",
+        "Resolution": "3840x2160",
+        "RefreshRate": "60 Hz"
+      },
+      "description": "High‑end 4K monitor — excellent color accuracy and detail, perfect for design, video editing, or professional work.",
+      "manufacturedDate": "2023-11-16"
+    },
+    {
+      "id": 24,
+      "title": "Samsung Galaxy Tab S7 11\" Tablet WiFi",
+      "category": "tablet",
+      "brand": "Samsung",
+      "thumbnail": "https://images.pexels.com/photos/5082571/pexels-photo-5082571.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "price": 649.99,
+      "specs": {
+        "CPU": "Snapdragon 865+",
+        "RAM": "6 GB",
+        "Display": "11\" LCD"
+      },
+      "description": "Slim and powerful 11-inch tablet — great for entertainment, note‑taking, and light productivity on the go.",
+      "manufacturedDate": "2023-07-30"
+    },
+    {
+      "id": 25,
+      "title": "Amazon Fire HD 10 Tablet 10.1\" 64GB",
+      "category": "tablet",
+      "brand": "Amazon",
+      "thumbnail": "https://images.pexels.com/photos/5082058/pexels-photo-5082058.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "price": 149.99,
+      "specs": {
+        "CPU": "MediaTek MT8183",
+        "RAM": "3 GB",
+        "Display": "10.1\" Full HD"
+      },
+      "description": "Affordable 10‑inch tablet — good for reading, streaming, casual browsing or light apps.",
+      "manufacturedDate": "2022-12-12"
+    },
+    {
+      "id": 26,
+      "title": "Canon PowerShot G7 X Mark II Compact Camera",
+      "category": "camera",
+      "brand": "Canon",
+      "thumbnail": "https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "price": 699.0,
+      "specs": {
+        "Megapixels": "20.1 MP",
+        "Lens": "24‑100 mm (equiv.)",
+        "Sensor": "1\""
+      },
+      "description": "Compact premium camera — combines portability with excellent image quality, great for travel and street photography.",
+      "manufacturedDate": "2023-06-19"
+    },
+    {
+      "id": 27,
+      "title": "Razer BlackShark V2 Gaming Headset",
+      "category": "accessories",
+      "brand": "Razer",
+      "thumbnail": "https://images.pexels.com/photos/159105/headphones-audio-music-159105.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "price": 69.99,
+      "specs": {
+        "Type": "Over‑ear Wired",
+        "Driver": "50 mm",
+        "NoiseCanceling": "No"
+      },
+      "description": "Affordable gaming headset — solid sound quality and comfortable design for gaming or calls.",
+      "manufacturedDate": "2024-02-10"
+    },
+    {
+      "id": 28,
+      "title": "Logitech MX Keys Mini Keyboard",
+      "category": "accessories",
+      "brand": "Logitech",
+      "thumbnail": "https://images.pexels.com/photos/5082061/pexels-photo-5082061.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "price": 79.99,
+      "specs": {
+        "Layout": "Compact 65%",
+        "Connectivity": "Bluetooth / USB‑C",
+        "Backlight": "Yes"
+      },
+      "description": "Compact wireless keyboard — ideal for minimalistic desks, mobile setups or coding on the go.",
+      "manufacturedDate": "2024-03-27"
+    },
+    {
+      "id": 29,
+      "title": "Seagate Barracuda 2TB Internal HDD 3.5\"",
+      "category": "accessories",
+      "brand": "Seagate",
+      "thumbnail": "https://images.pexels.com/photos/449848/pexels-photo-449848.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "price": 74.99,
+      "specs": {
+        "Capacity": "2 TB",
+        "Interface": "SATA III",
+        "Speed": "7200 RPM"
+      },
+      "description": "Reliable internal HDD — great value storage for desktops needing large capacity without breaking budget.",
+      "manufacturedDate": "2023-08-09"
+    },
+    {
+      "id": 30,
+      "title": "Logitech Brio 4K Webcam",
+      "category": "accessories",
+      "brand": "Logitech",
+      "thumbnail": "https://images.pexels.com/photos/844124/pexels-photo-844124.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "price": 199.99,
+      "specs": {
+        "Resolution": "4K UHD",
+        "FrameRate": "30 fps",
+        "Mic": "Built‑in"
+      },
+      "description": "High-resolution 4K webcam — perfect for streaming, video calls or content creation with crystal-clear quality.",
+      "manufacturedDate": "2024-04-20"
+    }
+  ]
+}
