@@ -6,6 +6,7 @@ import AuthModal from "./AuthModal";
 import type { AuthState } from "../types";
 import { useSelector, useDispatch } from "react-redux";
 import { logout } from "../slices/authSlice";
+import { FiUser, FiLogIn, FiLogOut } from "react-icons/fi";
 
 const Header = () => {
   const [showAuthModal, setShowAuthModal] = useState(false);
@@ -20,14 +21,25 @@ const Header = () => {
       </div>
       <div className={styles["right"]}>
         <button
+          className={styles["auth-button"]}
           onClick={() => {
             if (!auth.isLoggedIn) setShowAuthModal(true);
-            else {
-              dispatch(logout());
-            }
+            else dispatch(logout());
           }}
         >
-          {auth.isLoggedIn ? `Welcome, ${auth.user?.username}` : "Login"}
+          <span className={styles["icon"]}>
+            {auth.isLoggedIn ? <FiUser /> : <FiLogIn />}
+          </span>
+
+          <span className={styles["username"]}>
+            {auth.isLoggedIn ? auth.user?.username : "Login"}
+          </span>
+
+          {auth.isLoggedIn && (
+            <span className={styles["logout-icon"]}>
+              <FiLogOut />
+            </span>
+          )}
         </button>
         {auth.isLoggedIn && <CartIcon />}
         <AuthModal

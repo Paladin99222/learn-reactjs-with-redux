@@ -3,6 +3,7 @@ import styles from "./AuthModal.module.css";
 import { useDispatch } from "react-redux";
 import { loginUser, registerUser } from "../slices/authSlice";
 import type { AppDispatch } from "../store";
+import { fetchUserLikes } from "../slices/likeSlice";
 
 interface AuthModalProps {
   isOpen: boolean;
@@ -19,12 +20,11 @@ const AuthModal = ({ isOpen, onClose }: AuthModalProps) => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (isLogin) {
-      console.log(`username: ${username}, password: ${password}`);
-
       dispatch(loginUser({ username, password })).then((res) => {
         if (res.type === "auth/loginUser/rejected") {
           alert("Invalid username or password");
         } else {
+          dispatch(fetchUserLikes(res.payload.id));
           onClose();
         }
       });
@@ -50,18 +50,27 @@ const AuthModal = ({ isOpen, onClose }: AuthModalProps) => {
             type="text"
             placeholder="Full Name"
             value={username}
+            name="username"
+            autoComplete="username"
             onChange={(e) => setUsername(e.target.value)}
             required
           />
           <input
             type="password"
             placeholder="Password"
+            name="password"
+            autoComplete="current-password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
           />
           {!isLogin && (
-            <input type="password" placeholder="Confirm Password" required />
+            <input
+              type="password"
+              name="confirmPassword"
+              placeholder="Confirm Password"
+              required
+            />
           )}
           <button type="submit">{isLogin ? "Login" : "Register"}</button>
         </form>

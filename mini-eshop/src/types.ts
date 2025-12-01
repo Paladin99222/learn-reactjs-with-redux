@@ -37,3 +37,9 @@ export interface AuthState {
   isLoggedIn: boolean;
   user: User | null;
 }
+
+export interface LikeState {
+  likedProductIds: number[];
+  loading: boolean;
+  error: string | null;
+}
