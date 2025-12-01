@@ -57,13 +57,13 @@
   transform: scale(1.1);
 }
 
-.add-to-cart-button:disabled {
+.overlay-buttons button:disabled {
   background: rgba(200, 200, 200, 0.7);
   cursor: not-allowed;
   transform: none;
 }
 
-.add-to-cart-button:disabled:hover {
+.overlay-buttons button:disabled:hover {
   background: rgba(200, 200, 200, 0.7);
   transform: none;
 }

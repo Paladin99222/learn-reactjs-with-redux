@@ -9,11 +9,13 @@ function App() {
   return (
     <>
       <Header />
-      <Routes>
-        <Route path="/" element={<ListPage />} />
-        <Route path="/product/:id" element={<DetailPage />} />
-        <Route path="/cart" element={<CartPage />} />
-      </Routes>
+      <div className="content-area">
+        <Routes>
+          <Route path="/" element={<ListPage />} />
+          <Route path="/product/:id" element={<DetailPage />} />
+          <Route path="/cart" element={<CartPage />} />
+        </Routes>
+      </div>
     </>
   );
 }

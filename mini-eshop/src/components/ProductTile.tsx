@@ -1,4 +1,4 @@
-import type { CartState, Product } from "../types";
+import type { AuthState, CartState, Product } from "../types";
 import styles from "./ProductTile.module.css";
 import { FiShoppingCart } from "react-icons/fi";
 import { FaHeart, FaRegHeart } from "react-icons/fa";
@@ -11,6 +11,7 @@ interface ProductTileProps {
 
 const ProductTile: React.FC<ProductTileProps> = ({ product, onClick }) => {
   const cart = useSelector((state: { cart: CartState }) => state.cart);
+  const auth = useSelector((state: { auth: AuthState }) => state.auth);
   const dispatch = useDispatch();
 
   const isInCart = cart.items.some(
@@ -35,7 +36,7 @@ const ProductTile: React.FC<ProductTileProps> = ({ product, onClick }) => {
         <button
           className={styles["add-to-cart-button"]}
           title="Add to cart"
-          disabled={isInCart}
+          disabled={isInCart || !auth.isLoggedIn}
           onClick={(e) => {
             e.stopPropagation();
             dispatch(addToCart({ productId: Number(product.id) }));
@@ -45,11 +46,16 @@ const ProductTile: React.FC<ProductTileProps> = ({ product, onClick }) => {
         </button>
         <button
           title="Like"
+          disabled={!auth.isLoggedIn}
           onClick={(e) => {
             e.stopPropagation();
           }}
         >
-          <FaRegHeart size={20} color="#ef4444" />
+          {auth.user?.likes?.find((like) => like === product.id) ? (
+            <FaHeart size={20} color="#ef4444" />
+          ) : (
+            <FaRegHeart size={20} color="#ef4444" />
+          )}
         </button>
       </div>
 

@@ -25,3 +25,15 @@ export interface CartItem {
 export interface CartState {
   items: CartItem[];
 }
+
+export interface User {
+  id: number;
+  username: string;
+  password: string;
+  likes: number[]; // array of liked product IDs
+}
+
+export interface AuthState {
+  isLoggedIn: boolean;
+  user: User | null;
+}

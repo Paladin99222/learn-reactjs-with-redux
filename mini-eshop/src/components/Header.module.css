@@ -1,13 +1,16 @@
 .header {
   height: 36px;
   width: 100%;
-  padding: 0 24px;
+  padding: 40px 24px;
   box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #ddd;
   background-color: #fff;
+  position: fixed;
+  top: 0;
+  z-index: 100;
 }
 
 .left {
